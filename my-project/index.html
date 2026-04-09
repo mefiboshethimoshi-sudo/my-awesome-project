@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahari ya Mrembo 👜</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <h1 class="logo">Fahari ya Mrembo 👜</h1>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<section id="hero">
+  <h2>Welcome to Fahari ya Mrembo</h2>
+  <p>Elegant bags & pochi for modern women</p>
+  <input type="text" id="search" placeholder="Search products..." aria-label="Search products">
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="product-container">
+
+    <!-- 10 Products with alt text for accessibility -->
+    <div class="product">
+      <img src="images/bag1.jpg" alt="Elegant Handbag in beige leather">
+      <h3>Elegant Handbag</h3>
+      <p class="price" data-price="50000">TZS 50,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag2.jpg" alt="Luxury Purse in black leather">
+      <h3>Luxury Purse</h3>
+      <p class="price" data-price="30000">TZS 30,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag3.jpg" alt="Casual Bag in brown leather">
+      <h3>Casual Bag</h3>
+      <p class="price" data-price="20000">TZS 20,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag4.jpg" alt="Leather Handbag in dark brown">
+      <h3>Leather Handbag</h3>
+      <p class="price" data-price="70000">TZS 70,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag5.jpg" alt="Mini Pochi in red">
+      <h3>Mini Pochi</h3>
+      <p class="price" data-price="15000">TZS 15,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag6.jpg" alt="Classic Shoulder Bag in beige">
+      <h3>Classic Shoulder Bag</h3>
+      <p class="price" data-price="45000">TZS 45,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag7.jpg" alt="Designer Pochi in blue">
+      <h3>Designer Pochi</h3>
+      <p class="price" data-price="35000">TZS 35,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag8.jpg" alt="Travel Bag in gray">
+      <h3>Travel Bag</h3>
+      <p class="price" data-price="80000">TZS 80,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag9.jpg" alt="Office Handbag in black">
+      <h3>Office Handbag</h3>
+      <p class="price" data-price="55000">TZS 55,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag10.jpg" alt="Fashion Tote Bag in brown">
+      <h3>Fashion Tote Bag</h3>
+      <p class="price" data-price="40000">TZS 40,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items">
+    <li>No items yet</li>
+  </ul>
+  <h3 id="total">Total: 0 TZS</h3>
+
+  <button id="order-btn" class="order-btn">Order via WhatsApp</button>
+  <button id="checkout-btn">Proceed to Checkout</button>
+  <button id="clear-cart">Clear Cart</button>
+</section>
+
+<section id="checkout" style="display:none;">
+  <h2>Checkout</h2>
+  <button id="confirm-order">Confirm Order</button>
+</section>
+
+<section id="history">
+  <h2>Order History</h2>
+  <ul id="order-history"></ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-container">
+
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <div id="form-error" style="color:red;"></div>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📞 WhatsApp: +255699059787</p>
+      <p>✉ Email: myshop@gmail.com</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Fahari ya Mrembo</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
